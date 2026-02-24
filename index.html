@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f6c23e;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #dda20a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚀 GitHub 테스트 페이지</h1>
+        <p id="message">정상적으로 배포되었습니다.</p>
+        <button onclick="changeMessage()">클릭 테스트</button>
+    </div>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").innerText = "버튼 클릭 이벤트 정상 동작!";
+        }
+    </script>
+
+</body>
+</html>
